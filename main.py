@@ -6,7 +6,7 @@ pc_wins=0
 
 choices=["r","p","s"]
 
-for i in range (0,4):
+for i in range (0,100):
 
     
 
@@ -33,7 +33,8 @@ for i in range (0,4):
             print("PC won")
             pc_wins+=1
     
-
+            if user_wins==10 or pc_wins ==10:
+                break
 
 print("User score :",user_wins)
 print("PC score :",pc_wins)
